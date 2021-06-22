@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageId>MoleculeSoftware.Packages.OffenseLibrary</PackageId>
+    <Authors>Joshua H. Santiago</Authors>
+    <Company>Molecule Software</Company>
+    <Description>Library that supports the storage and retrieval of North Carolina offense descriptions, offense codes, statutory references, and implementation/retirement dates of certain offenses as set out by the North Carolina legislature. These offenses are retrieved via a yearly update by the Administrative Office of the Courts.</Description>
+    <Copyright>2021 Molecule Software</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.18</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MoleculeSoftware.Packages.CSVEngine" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
